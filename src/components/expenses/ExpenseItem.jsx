@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './expenseItem.css'
 import { ExpenseData } from './ExpenseData';
 
-export const ExpenseItem = ({ expenses }) => {
+export const ExpenseItem = ({ title,amount ,date,id}) => {
   const [helperTitle, sethelperTitle] = useState("")
 
   const changeTitle=(index)=>{
@@ -14,24 +14,24 @@ export const ExpenseItem = ({ expenses }) => {
    
   }
 
-  console.log(expenses)
+
+ 
+
+  
   return (
     <>
 
-      {
-        expenses.map((expense,index) => {
-          return (<>
+   
             <div className="expense-item" >
-              <ExpenseData date={expense.expensesDate}/>
+              <ExpenseData date={date}/>
               <div className="expense-item__description">
-                <h2>{index!==helperTitle?expense.expenseTitle:`${expense.expenseTitle} just clicked`}</h2>
-                <div className="expense-item__price">${expense.Price}</div>
+                <h2>{id!==helperTitle?title:`${title} just clicked`}</h2>
+                <div className="expense-item__price">${amount}</div>
               </div>
-              <button className='button-text' onClick={()=>changeTitle(index)}>Click me!</button>
+              <button className='button-text' onClick={()=>changeTitle(id)}>Click me!</button>
             </div>
-          </>)
-        })
-      }
+       
+      
     </>
 
   );

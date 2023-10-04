@@ -2,6 +2,7 @@ import moment from 'moment'
 
 export let expenses = [
       {
+            id: 468,
             expensesDate: {
                   month: "Oct",
                   year: "2023",
@@ -11,6 +12,7 @@ export let expenses = [
             Price: '294.67'
       },
       {
+            id: 479,
             expensesDate: {
                   month: "Oct",
                   year: "2023",
@@ -20,6 +22,7 @@ export let expenses = [
             Price: '200'
       },
       {
+            id: 455,
             expensesDate: {
                   month: "Oct",
                   year: "2023",
@@ -30,6 +33,7 @@ export let expenses = [
             Price: '594'
       },
       {
+            id:876,
             expensesDate: {
                   month: "Oct",
                   year: "2023",
@@ -38,7 +42,7 @@ export let expenses = [
             expenseTitle: "EMI",
             Price: '800'
       },
-      {
+      {id:836,
             expensesDate: {
                   month: "Oct",
                   year: "2023",
@@ -47,7 +51,7 @@ export let expenses = [
             expenseTitle: "Electricity bill",
             Price: '127'
       },
-      {
+      {id:345,
             expensesDate: {
                   month: "Oct",
                   year: "2023",

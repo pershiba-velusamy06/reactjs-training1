@@ -54,7 +54,8 @@ export const NewExpenseForm = ({ expenseList, setexpenseList }) => {
                 Date: formData.DateVal.Date
             },
             expenseTitle: formData.title,
-            Price: formData.amount
+            Price: formData.amount,
+            id:Math.floor( Math.random()*999 ) + 100
         }
         setexpenseList((preVal) => [...preVal, expenditure])
         setformData({
